@@ -2,7 +2,7 @@
 import { ref, onMounted } from "vue";
 import { getUsers } from "./services/api";
 
-const users = ref([]);
+const blogs = ref([]);
 
 onMounted(async () => {
   blogs.value = await getUsers();
