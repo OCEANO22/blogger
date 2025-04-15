@@ -2,10 +2,10 @@
 import { ref, onMounted } from "vue";
 import { getUsers } from "./services/api";
 
-const blogs = ref([]);
+const blog = ref([]);
 
 onMounted(async () => {
-  blogs.value = await getUsers();
+  blog.value = await getUsers();
 });
 </script>
 
@@ -13,7 +13,7 @@ onMounted(async () => {
   <div>
     <h1>Blog</h1>
     <ul>
-      <li v-for="blog in blogs.results" :key="blog.id">{{ blog.judul }}</li>
+      <li v-for="blog in blog.results" :key="blog.id">{{ blog.judul }}</li>
     </ul>
   </div>
 </template>
