@@ -1,0 +1,8 @@
+name = "adam-vue"
+compatibility_date = "2023-10-01"
+main = "src/worker.js" 
+
+[[d1_databases]]
+binding = "DB" # Nama binding yang akan digunakan di Workers
+database_name = "blogger"
+database_id = "9c0f7cd9-6bd9-4aca-9c60-7f9675ab0b14"
