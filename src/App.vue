@@ -5,15 +5,15 @@ import { getUsers } from "./services/api";
 const users = ref([]);
 
 onMounted(async () => {
-  users.value = await getUsers();
+  blogs.value = await getUsers();
 });
 </script>
 
 <template>
   <div>
-    <h1>Users</h1>
+    <h1>Blog</h1>
     <ul>
-      <li v-for="blogger in users.results" :key="blogger.id">{{ blogger.judul }}</li>
+      <li v-for="blog in blogs.results" :key="blog.id">{{ blog.judul }}</li>
     </ul>
   </div>
 </template>
